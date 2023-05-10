@@ -3,8 +3,6 @@ body{
     background-color: hsl(210, 46%, 95%);
     font-size: 13px;
     margin: 5%;
-    max-height: 100vh;
-    max-width: 100%;
 }
 
 .container{
