@@ -1,0 +1,89 @@
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    margin: 5%;
+    max-height: 100vh;
+    max-width: 100%;
+}
+
+.container{
+    
+    max-width: 1440px;
+    display: grid;    
+    grid-template-areas: 'card1 card1 card2 card3'
+                         'card4 card5 card5 card3';
+    gap: 15px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header__image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #996ed9 ;
+    margin-right: 10px;
+}
+
+header h3,header p{
+    margin:auto;
+    font-weight: 500;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.card--purplebg{
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+    grid-area: card1;
+}
+
+.card--graybg{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    grid-area: card2;
+}
+
+.card--bigwhitebg{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    grid-area: card3;
+}
+
+.card--smallwhitebg{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    grid-area: card4;
+}
+
+.card--blackbg{
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    grid-area: card5;
+}
+
+header p{
+    opacity:50% ;
+}
+
+.card__body{
+    opacity: 70%;
+}
+
+.card__title{
+    font-weight: 600;
+    font-size: large;
+}
+
